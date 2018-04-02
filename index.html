@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>COMP5347 Assignment One</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <form method="get" action="">
+        <div id="searchBox">
+            <input type="text" id="searchInput">
+            <input type="button" value="Search" id="searchButton" class="b">
+            <select id=filterInput>
+                <option value="0">Default</option>
+                <option value="1">Art</option>
+                <option value="2">Science History</option>
+                <option value="3">Action and Adventure</option>
+                <option value="4">Health</option>
+                <option value="5">Science Fiction</option>
+                <option value="6">Extra Category</option>
+            </select>
+            <input type="button" value="Filter" id="filterButton" class="b">
+            <input type="button" value="Add to cart" id="addButton" class="b">
+            <input type="button" value="Reset the cart" id="resetButton" class="b"> <img src="images/cart.jpg" alt="cartimg" width="20" height="20" align="middle"> <span id="cart">(0)</span> </div>
+        <div id="listBox">
+            <table>
+                <caption>Online Book Store</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Authors</th>
+                        <th>Year</th>
+                        <th>Price</th>
+                        <th>Publisher</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb1"> </td>
+                        <td><img src="images/01.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The Arts: A Visual Encyclopedia</td>
+                        <td>DK</td>
+                        <td>2017</td>
+                        <td>13.99</td>
+                        <td>DK Childres</td>
+                        <td class="category">Art</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb2"> </td>
+                        <td><img src="images/11.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The Lost Art of Reading Nature's Signs: Use Outdoor Clues to Find Your Way, Predict the Weather, Locate Water, Track Animals―and Other Forgotten Skills (Natural Navigation)</td>
+                        <td>Tristan Gooley</td>
+                        <td>2015</td>
+                        <td>11.52</td>
+                        <td>The Experiment</td>
+                        <td class="category">Art</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb3"> </td>
+                        <td><img src="images/02.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The Scientists: A History of Science Told Through the Lives of Its Greatest Inventors</td>
+                        <td>John Gribbin</td>
+                        <td>2004</td>
+                        <td>16.00</td>
+                        <td>Random House Trade Paperbacks</td>
+                        <td class="category">Science History</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb4"> </td>
+                        <td><img src="images/22.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The Invention of Science: A New History of the Scientific Revolution</td>
+                        <td>David Wootton</td>
+                        <td>2016</td>
+                        <td>7.75</td>
+                        <td>Harper Perennial</td>
+                        <td class="category">Science History</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb5"> </td>
+                        <td><img src="images/03.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The Hunger Games</td>
+                        <td>Suzanne Collins</td>
+                        <td>2010</td>
+                        <td>7.75</td>
+                        <td>Scholastic Press</td>
+                        <td class="category">Action and Adventure</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb6"> </td>
+                        <td><img src="images/33.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>Coyote Peterson’s Brave Adventures: Wild Animals in a Wild World</td>
+                        <td>Coyote Peterson</td>
+                        <td>2017</td>
+                        <td>13.44</td>
+                        <td>Mango</td>
+                        <td class="category">Action and Adventure</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb7"> </td>
+                        <td><img src="images/04.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>Dr. A's Habits of Health: The Path to Permanent Weight Control & Optimal Health</td>
+                        <td>Wayne Scott Anderse</td>
+                        <td>2010</td>
+                        <td>24.43</td>
+                        <td>Habits of Health Press</td>
+                        <td class="category">Health</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb8"> </td>
+                        <td><img src="images/44.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>The New Health Rules: Simple Changes to Achieve Whole-Body Wellness</td>
+                        <td>Frank Lipman M.D.</td>
+                        <td>2016</td>
+                        <td>8.98</td>
+                        <td>Artisan</td>
+                        <td class="category">Health</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb9"> </td>
+                        <td><img src="images/05.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>2084</td>
+                        <td>Mason Engel</td>
+                        <td>2017</td>
+                        <td>12.50</td>
+                        <td>CreateSpace Independent Publishing Platform</td>
+                        <td class="category">Science Fiction</td>
+                    </tr>
+                    <tr class=book>
+                        <td>
+                            <input type="checkbox" id="cb10"> </td>
+                        <td><img src="images/55.jpg" align="middle" width="60" height="80"></td>
+                        <td class=title>God's Ground: Compared to the settlement of space, all other forms of human endeavor shrink to insignificance</td>
+                        <td>John Brophy</td>
+                        <td>2017</td>
+                        <td>6.99</td>
+                        <td>John R Brophy</td>
+                        <td class="category">Science Fiction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
